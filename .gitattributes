@@ -1,0 +1,5 @@
+# Normalize line endings to LF across platforms.
+* text=auto eol=lf
+
+# Lockfile is generated — collapse in diffs.
+pnpm-lock.yaml linguist-generated=true -diff

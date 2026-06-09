@@ -1,0 +1,27 @@
+{
+  "name": "netxpert",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Monorepo hub for rxjs-full-claude — an RxJS + TypeScript fullstack web framework on the Vite ecosystem, deployed to Cloudflare.",
+  "packageManager": "pnpm@11.5.2",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "deploy": "turbo run deploy",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
+  }
+}

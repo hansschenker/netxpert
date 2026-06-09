@@ -1,0 +1,7 @@
+{
+  // Solution-style root config. Real type-checking happens per-package via `pnpm typecheck`.
+  // As packages adopt `composite: true`, add `{ "path": "..." }` references here so
+  // `tsc -b` can build the whole graph incrementally.
+  "files": [],
+  "references": []
+}

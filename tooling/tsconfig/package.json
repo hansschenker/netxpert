@@ -1,0 +1,17 @@
+{
+  "name": "@netxpert/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "base.json",
+    "lib.json",
+    "app.json",
+    "worker.json"
+  ],
+  "exports": {
+    "./base.json": "./base.json",
+    "./lib.json": "./lib.json",
+    "./app.json": "./app.json",
+    "./worker.json": "./worker.json"
+  }
+}

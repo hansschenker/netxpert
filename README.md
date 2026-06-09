@@ -1,0 +1,51 @@
+# netxpert
+
+Monorepo hub for **`rxjs-full-claude`** — an RxJS + TypeScript fullstack web
+framework built on the Vite ecosystem and deployed to Cloudflare Workers.
+
+## Stack
+
+| Concern          | Tool                                            |
+| ---------------- | ----------------------------------------------- |
+| Package manager  | pnpm workspaces + catalog                        |
+| Task runner      | Turborepo                                        |
+| App bundler      | Vite + `@cloudflare/vite-plugin` (Workers)       |
+| Library bundler  | tsdown (Rolldown)                                |
+| Tests            | Vitest + `@cloudflare/vitest-pool-workers`       |
+| Lint / format    | Biome                                            |
+| Versioning       | Changesets (added in a later phase)              |
+| Deploy target    | Cloudflare Workers                               |
+
+## Layout
+
+```
+apps/        deployable apps that dogfood the framework (docs, playground)
+examples/    minimal example apps (also used by the scaffolding CLI)
+packages/    publishable framework packages (@rxjs-full/*)
+tooling/     internal, never-published shared config (tsconfig, biome)
+```
+
+## Getting started
+
+```bash
+pnpm install        # install everything
+pnpm dev            # run all dev servers (turbo)
+pnpm --filter @netxpert/playground dev   # run just the playground
+
+pnpm build          # build all packages/apps
+pnpm typecheck      # type-check the whole repo
+pnpm lint           # biome check
+```
+
+## Deploy
+
+Each deployable app has its own `wrangler.jsonc`:
+
+```bash
+pnpm --filter @netxpert/playground deploy   # wrangler deploy
+```
+
+## Requirements
+
+- Node `>=22`
+- pnpm `11.x` (pinned via `packageManager`)

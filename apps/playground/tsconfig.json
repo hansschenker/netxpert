@@ -1,0 +1,9 @@
+{
+  "extends": "@netxpert/tsconfig/base.json",
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "noEmit": true,
+    "types": []
+  },
+  "include": ["src", "vite.config.ts", "worker-configuration.d.ts"]
+}
