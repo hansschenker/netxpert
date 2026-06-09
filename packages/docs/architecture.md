@@ -9,15 +9,15 @@ netxpert is a [pnpm workspace](https://pnpm.io/workspaces) orchestrated by
 netxpert/
 ├─ apps/
 │  └─ playground/          # Cloudflare Vite vertical slice (Worker + SPA)
-├─ docs/                   # this VitePress site (@netxpert/docs)
 ├─ examples/               # (reserved) minimal example apps
-├─ packages/               # publishable framework packages (@rxjs-full/*)
+├─ packages/               # framework packages (@rxjs-full/*) + the docs site
 │  ├─ core/                # reactive primitives
 │  ├─ router/              # reactive routing
 │  ├─ runtime/             # client render / hydration
 │  ├─ server/              # SSR / streaming
 │  ├─ cloudflare/          # Workers adapter
-│  └─ vite/                # the framework's Vite plugin
+│  ├─ vite/                # the framework's Vite plugin
+│  └─ docs/                # this VitePress site (@netxpert/docs)
 ├─ tooling/                # internal, never-published shared config
 │  ├─ tsconfig/            # @netxpert/tsconfig: base / lib / app / worker
 │  └─ biome-config/        # @netxpert/biome-config: shared Biome rules
@@ -36,7 +36,6 @@ netxpert/
 ```yaml
 packages:
   - "apps/*"
-  - "docs"
   - "examples/*"
   - "packages/*"
   - "tooling/*"

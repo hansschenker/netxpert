@@ -73,4 +73,4 @@ pnpm changeset
 
 On merge to `main`, CI opens (or updates) a **Version Packages** PR. Merging that
 PR publishes the changed `@rxjs-full/*` packages to npm — see
-[Tooling → Releases](/guide/tooling#releases-changesets).
+[Tooling → Releases](/tooling#releases-changesets).

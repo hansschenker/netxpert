@@ -19,9 +19,9 @@ framework built on the Vite ecosystem and deployed to Cloudflare Workers.
 ## Layout
 
 ```
-apps/        deployable apps that dogfood the framework (docs, playground)
+apps/        deployable apps that dogfood the framework (playground)
 examples/    minimal example apps (also used by the scaffolding CLI)
-packages/    publishable framework packages (@rxjs-full/*)
+packages/    publishable framework packages (@rxjs-full/*) + the docs site
 tooling/     internal, never-published shared config (tsconfig, biome)
 ```
 
@@ -49,7 +49,7 @@ pnpm --filter @netxpert/playground deploy   # wrangler deploy
 
 The work is sequenced in phases. See [`project-phases.md`](./project-phases.md)
 for the detailed working plan — realized phases (with commit refs) and the plan
-for upcoming sessions — or the [docs roadmap](./docs/guide/roadmap.md) for the
+for upcoming sessions — or the [docs roadmap](./packages/docs/roadmap.md) for the
 summary.
 
 ## Requirements

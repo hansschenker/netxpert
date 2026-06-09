@@ -7,8 +7,8 @@ export default defineConfig({
   lang: 'en-US',
   cleanUrls: true,
   lastUpdated: false,
-  // Build into docs/dist so it matches the repo's `dist/**` Turbo outputs and
-  // the Cloudflare Workers assets directory.
+  // Build into packages/docs/dist so it matches the repo's `dist/**` Turbo
+  // outputs and the Cloudflare Workers assets directory.
   outDir: 'dist',
   themeConfig: {
     nav: [
@@ -49,7 +49,6 @@ export default defineConfig({
             { text: '@rxjs-full/server', link: '/packages/server' },
             { text: '@rxjs-full/cloudflare', link: '/packages/cloudflare' },
             { text: '@rxjs-full/vite', link: '/packages/vite' },
-            { text: '@rxjs-full/docs', link: '/packages/docs' },
           ],
         },
       ],
@@ -57,7 +56,7 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/hansschenker/netxpert' }],
     search: { provider: 'local' },
     editLink: {
-      pattern: 'https://github.com/hansschenker/netxpert/edit/main/docs/:path',
+      pattern: 'https://github.com/hansschenker/netxpert/edit/main/packages/docs/:path',
       text: 'Edit this page on GitHub',
     },
     footer: {

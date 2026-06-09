@@ -5,7 +5,7 @@ This is the working plan for building **`rxjs-full-claude`** inside the
 the phases already realized and the phases still planned — so any future session
 (human or agent) can pick up with full context.
 
-It complements the high-level [docs roadmap](./docs/guide/roadmap.md): the
+It complements the high-level [docs roadmap](./packages/docs/roadmap.md): the
 roadmap is the public-facing summary, this file is the detailed working plan.
 
 ---
@@ -60,8 +60,8 @@ For each new exported API in a package:
 
 **Goal:** a working pnpm + Turborepo monorepo skeleton.
 
-- pnpm workspaces (`apps` / `docs` / `examples` / `packages` / `tooling`) + a
-  shared dependency **catalog**.
+- pnpm workspaces (`apps` / `examples` / `packages` / `tooling`) + a shared
+  dependency **catalog**.
 - Turborepo task graph: `build` / `dev` / `typecheck` / `test` / `deploy` /
   `clean`.
 - Shared tooling: `@netxpert/tsconfig` (base / lib / app / worker),
@@ -98,8 +98,9 @@ Built with tsdown (`.mjs` + `.d.mts`); playground dogfoods `@rxjs-full/core`.
 
 ### ✅ Supporting milestone — Documentation  ·  `459f1de`
 
-- VitePress site under `docs/` (`@netxpert/docs`) with full guide + per-package
-  API pages; builds to `docs/dist`; deployable as an assets-only Worker.
+- VitePress site under `packages/docs/` (`@netxpert/docs`) with full guide +
+  per-package API pages; builds to `packages/docs/dist`; deployable as an
+  assets-only Worker.
 
 ---
 

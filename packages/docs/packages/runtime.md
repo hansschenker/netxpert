@@ -44,4 +44,4 @@ function mount<T>(
 
 The real runtime will diff a reactive view tree (rather than replacing
 `innerHTML`) and support hydration of server-rendered markup — see
-[Phase 4](/guide/roadmap#phase-4-build-the-framework-next).
+[Phase 4](/roadmap#phase-4-build-the-framework-next).

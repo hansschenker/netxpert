@@ -1,7 +1,7 @@
 # @rxjs-full/vite
 
 The framework's own Vite plugin — distinct from the
-[`@cloudflare/vite-plugin`](/guide/cloudflare) (the two compose).
+[`@cloudflare/vite-plugin`](/cloudflare) (the two compose).
 
 - **Peer dependency:** `vite` (`^8.0.0`)
 - **Status:** skeleton
@@ -39,4 +39,4 @@ This plugin will own:
 - the SSR entry wiring,
 - HMR for reactive views.
 
-See [Phase 4](/guide/roadmap#phase-4-build-the-framework-next).
+See [Phase 4](/roadmap#phase-4-build-the-framework-next).

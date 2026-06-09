@@ -5,8 +5,8 @@ was bootstrapped.
 
 ## ✅ Phase 1 — Foundation
 
-- pnpm workspaces (`apps` / `docs` / `examples` / `packages` / `tooling`) with a
-  shared dependency **catalog**.
+- pnpm workspaces (`apps` / `examples` / `packages` / `tooling`) with a shared
+  dependency **catalog**.
 - Turborepo task graph: `build` / `dev` / `typecheck` / `test` / `deploy` /
   `clean`.
 - Shared tooling: `@netxpert/tsconfig` (base / lib / app / worker) and
@@ -42,7 +42,8 @@ The playground dogfoods `@rxjs-full/core` (a reactive counter).
 
 ## ✅ Documentation
 
-- This VitePress site under `docs/`, deployable as an assets-only Worker.
+- This VitePress site under `packages/docs/`, deployable as an assets-only
+  Worker.
 
 ## ⏭️ Phase 4 — Build the framework (next)
 

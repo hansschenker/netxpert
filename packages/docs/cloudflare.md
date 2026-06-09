@@ -82,11 +82,11 @@ You'll need to authenticate Wrangler once (`wrangler login`) or provide a
 
 ## The docs site
 
-This documentation site (`docs/`) ships as an **assets-only Worker** — no server
-code, just the static VitePress build:
+This documentation site (`packages/docs/`) ships as an **assets-only Worker** —
+no server code, just the static VitePress build:
 
 ```jsonc
-// docs/wrangler.jsonc
+// packages/docs/wrangler.jsonc
 {
   "name": "netxpert-docs",
   "compatibility_date": "2026-06-01",

@@ -65,4 +65,4 @@ sub.unsubscribe()
 ## Next
 
 `computed`, `effect`, and resource/store primitives will be layered on `state`
-in [Phase 4](/guide/roadmap#phase-4-build-the-framework-next).
+in [Phase 4](/roadmap#phase-4-build-the-framework-next).

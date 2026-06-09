@@ -81,7 +81,7 @@ files — keep them in sync if you change the build.
 ## TypeScript
 
 Shared bases live in `@netxpert/tsconfig` — see
-[Monorepo structure](/guide/architecture#typescript-project-setup). Builds are
+[Monorepo structure](/architecture#typescript-project-setup). Builds are
 done by tsdown; `tsc --noEmit` is used only for type-checking.
 
 ## Biome (lint + format)

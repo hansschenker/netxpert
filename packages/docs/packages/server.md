@@ -32,4 +32,4 @@ function renderToString(view$: Observable<string>): Promise<RenderResult>
 The real server will **stream** chunks to the `Response` as the view Observable
 emits, rather than awaiting a single value — a natural fit for streaming SSR on
 Cloudflare Workers. See
-[Phase 4](/guide/roadmap#phase-4-build-the-framework-next).
+[Phase 4](/roadmap#phase-4-build-the-framework-next).

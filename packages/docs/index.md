@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /guide/getting-started
+      link: /getting-started
     - theme: alt
       text: Architecture
-      link: /guide/architecture
+      link: /architecture
     - theme: alt
       text: GitHub
       link: https://github.com/hansschenker/netxpert
@@ -33,6 +33,6 @@ This repository is the **hub** for building `rxjs-full-claude`. The foundation,
 the framework package skeletons, and the release tooling are in place and green;
 the framework internals are the next phase of work.
 
-See the [Roadmap](/guide/roadmap) for exactly what is done and what is next.
+See the [Roadmap](/roadmap) for exactly what is done and what is next.
 
 These docs auto-deploy to Cloudflare Workers on every push to `main`.

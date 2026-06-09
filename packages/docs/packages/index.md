@@ -27,5 +27,5 @@ Every package:
 ::: info Versioning
 All six are currently at `0.0.0` with a pending `minor` changeset, so the first
 release will cut them at `0.1.0` together. See
-[Tooling → Releases](/guide/tooling#releases-changesets).
+[Tooling → Releases](/tooling#releases-changesets).
 :::

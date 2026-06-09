@@ -42,9 +42,9 @@ everywhere, with one consistent mental model.
 
 ## How to read these docs
 
-- [Getting started](/guide/getting-started) — install and run the repo.
-- [Monorepo structure](/guide/architecture) — how everything is laid out.
-- [Tooling](/guide/tooling) — pnpm, Turborepo, tsdown, Biome, Changesets, CI.
-- [Cloudflare deployment](/guide/cloudflare) — the dev + deploy model.
+- [Getting started](/getting-started) — install and run the repo.
+- [Monorepo structure](/architecture) — how everything is laid out.
+- [Tooling](/tooling) — pnpm, Turborepo, tsdown, Biome, Changesets, CI.
+- [Cloudflare deployment](/cloudflare) — the dev + deploy model.
 - [Packages](/packages/) — the `@rxjs-full/*` API as it stands today.
-- [Roadmap](/guide/roadmap) — what's done and what's next.
+- [Roadmap](/roadmap) — what's done and what's next.

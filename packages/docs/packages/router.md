@@ -56,4 +56,4 @@ return {
 ## Next
 
 Real path matching, route params, and nested routes land in
-[Phase 4](/guide/roadmap#phase-4-build-the-framework-next).
+[Phase 4](/roadmap#phase-4-build-the-framework-next).
