@@ -6,36 +6,36 @@ export default defineConfig({
     'Monorepo hub for rxjs-full-claude — an RxJS + TypeScript fullstack framework on the Vite ecosystem, deployed to Cloudflare.',
   lang: 'en-US',
   cleanUrls: true,
-  lastUpdated: true,
+  lastUpdated: false,
   // Build into docs/dist so it matches the repo's `dist/**` Turbo outputs and
   // the Cloudflare Workers assets directory.
   outDir: 'dist',
   themeConfig: {
     nav: [
-      { text: 'Guide', link: '/guide/introduction' },
+      { text: 'Guide', link: '/introduction' },
       { text: 'Packages', link: '/packages/' },
-      { text: 'Roadmap', link: '/guide/roadmap' },
+      { text: 'Roadmap', link: '/roadmap' },
     ],
     sidebar: {
-      '/guide/': [
+      '/': [
         {
           text: 'Introduction',
           items: [
-            { text: 'What is netxpert?', link: '/guide/introduction' },
-            { text: 'Getting started', link: '/guide/getting-started' },
+            { text: 'What is netxpert?', link: '/introduction' },
+            { text: 'Getting started', link: '/getting-started' },
           ],
         },
         {
           text: 'Architecture',
           items: [
-            { text: 'Monorepo structure', link: '/guide/architecture' },
-            { text: 'Tooling', link: '/guide/tooling' },
-            { text: 'Cloudflare deployment', link: '/guide/cloudflare' },
+            { text: 'Monorepo structure', link: '/architecture' },
+            { text: 'Tooling', link: '/tooling' },
+            { text: 'Cloudflare deployment', link: '/cloudflare' },
           ],
         },
         {
           text: 'Project',
-          items: [{ text: 'Roadmap', link: '/guide/roadmap' }],
+          items: [{ text: 'Roadmap', link: '/roadmap' }],
         },
       ],
       '/packages/': [
@@ -49,6 +49,7 @@ export default defineConfig({
             { text: '@rxjs-full/server', link: '/packages/server' },
             { text: '@rxjs-full/cloudflare', link: '/packages/cloudflare' },
             { text: '@rxjs-full/vite', link: '/packages/vite' },
+            { text: '@rxjs-full/docs', link: '/packages/docs' },
           ],
         },
       ],
