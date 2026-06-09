@@ -45,6 +45,13 @@ Each deployable app has its own `wrangler.jsonc`:
 pnpm --filter @netxpert/playground deploy   # wrangler deploy
 ```
 
+## Project phases
+
+The work is sequenced in phases. See [`project-phases.md`](./project-phases.md)
+for the detailed working plan — realized phases (with commit refs) and the plan
+for upcoming sessions — or the [docs roadmap](./docs/guide/roadmap.md) for the
+summary.
+
 ## Requirements
 
 - Node `>=22`
