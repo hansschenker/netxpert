@@ -7,6 +7,9 @@ dist/
 .turbo/
 coverage/
 
+# vitepress
+**/.vitepress/cache/
+
 # cloudflare / wrangler
 .wrangler/
 .dev.vars

@@ -1,0 +1,10 @@
+{
+  // Assets-only Worker: deploys the static VitePress build (no server code).
+  // Run `pnpm --filter @netxpert/docs build` first, then `... deploy`.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "netxpert-docs",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
