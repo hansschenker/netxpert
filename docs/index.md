@@ -34,3 +34,5 @@ the framework package skeletons, and the release tooling are in place and green;
 the framework internals are the next phase of work.
 
 See the [Roadmap](/guide/roadmap) for exactly what is done and what is next.
+
+These docs auto-deploy to Cloudflare Workers on every push to `main`.
