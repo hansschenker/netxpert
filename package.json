@@ -17,10 +17,14 @@
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
-    "clean": "turbo run clean"
+    "clean": "turbo run clean",
+    "changeset": "changeset",
+    "version:packages": "changeset version",
+    "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
+    "@changesets/cli": "^2.31.0",
     "turbo": "catalog:",
     "typescript": "catalog:"
   }
