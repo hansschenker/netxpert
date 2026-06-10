@@ -1,6 +1,6 @@
 {
   "name": "@rxjs-full/core",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Reactive primitives for rxjs-full-claude, built on RxJS.",
   "type": "module",
   "files": [

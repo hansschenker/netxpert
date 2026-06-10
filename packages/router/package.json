@@ -1,6 +1,6 @@
 {
   "name": "@rxjs-full/router",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Reactive routing as RxJS streams for rxjs-full-claude.",
   "type": "module",
   "files": [

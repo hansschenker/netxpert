@@ -1,6 +1,6 @@
 {
   "name": "@rxjs-full/runtime",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Client-side render & hydration runtime for rxjs-full-claude.",
   "type": "module",
   "files": [
