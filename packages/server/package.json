@@ -1,6 +1,6 @@
 {
   "name": "@rxjs-full/server",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "SSR & streaming render pipeline for rxjs-full-claude.",
   "type": "module",
   "files": [
