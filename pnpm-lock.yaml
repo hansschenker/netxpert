@@ -50,6 +50,9 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
+      unrun:
+        specifier: ^0.3.1
+        version: 0.3.1
 
   apps/playground:
     dependencies:
@@ -87,7 +90,7 @@ importers:
         version: link:../../tooling/tsconfig
       tsdown:
         specifier: 'catalog:'
-        version: 0.22.2(typescript@6.0.3)
+        version: 0.22.2(typescript@6.0.3)(unrun@0.3.1)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -106,7 +109,7 @@ importers:
         version: link:../../tooling/tsconfig
       tsdown:
         specifier: 'catalog:'
-        version: 0.22.2(typescript@6.0.3)
+        version: 0.22.2(typescript@6.0.3)(unrun@0.3.1)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -137,7 +140,7 @@ importers:
         version: link:../../tooling/tsconfig
       tsdown:
         specifier: 'catalog:'
-        version: 0.22.2(typescript@6.0.3)
+        version: 0.22.2(typescript@6.0.3)(unrun@0.3.1)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -156,7 +159,7 @@ importers:
         version: link:../../tooling/tsconfig
       tsdown:
         specifier: 'catalog:'
-        version: 0.22.2(typescript@6.0.3)
+        version: 0.22.2(typescript@6.0.3)(unrun@0.3.1)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -175,7 +178,7 @@ importers:
         version: link:../../tooling/tsconfig
       tsdown:
         specifier: 'catalog:'
-        version: 0.22.2(typescript@6.0.3)
+        version: 0.22.2(typescript@6.0.3)(unrun@0.3.1)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -190,7 +193,7 @@ importers:
         version: link:../../tooling/tsconfig
       tsdown:
         specifier: 'catalog:'
-        version: 0.22.2(typescript@6.0.3)
+        version: 0.22.2(typescript@6.0.3)(unrun@0.3.1)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -2392,6 +2395,16 @@ packages:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
     engines: {node: '>= 4.0.0'}
 
+  unrun@0.3.1:
+    resolution: {integrity: sha512-onIck/oNnCaytwths1ZVp1LK2Gq2hPoyFhiHebObuUXqR3S0uHuLLaBK8K6mRRgV7Ptip8AnNvaUsgzwWwBZuA==}
+    engines: {node: ^22.13.0 || >=24.0.0}
+    hasBin: true
+    peerDependencies:
+      synckit: ^0.11.11
+    peerDependenciesMeta:
+      synckit:
+        optional: true
+
   vfile-message@4.0.3:
     resolution: {integrity: sha512-QTHzsGd1EhbZs4AsQ20JX1rC3cOlt/IWJruk893DfLRr57lcnOeMaWG4K0JrRta4mIJZKth2Au3mM3u03/JWKw==}
 
@@ -4485,7 +4498,7 @@ snapshots:
 
   trim-lines@3.0.1: {}
 
-  tsdown@0.22.2(typescript@6.0.3):
+  tsdown@0.22.2(typescript@6.0.3)(unrun@0.3.1):
     dependencies:
       ansis: 4.3.1
       cac: 7.0.0
@@ -4504,6 +4517,7 @@ snapshots:
       unconfig-core: 7.5.0
     optionalDependencies:
       typescript: 6.0.3
+      unrun: 0.3.1
     transitivePeerDependencies:
       - '@ts-macro/tsc'
       - '@typescript/native-preview'
@@ -4558,6 +4572,10 @@ snapshots:
       unist-util-visit-parents: 6.0.2
 
   universalify@0.1.2: {}
+
+  unrun@0.3.1:
+    dependencies:
+      rolldown: 1.1.0
 
   vfile-message@4.0.3:
     dependencies:
